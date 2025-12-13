@@ -81,7 +81,7 @@ if col_dept in contenu.columns and col_inscrits in contenu.columns and col_votan
         filename = f"barres_{col.lower().replace(' ', '_')}_par_departement.png"
         plt.savefig(os.path.join(IMG_DIR, filename), dpi=150)
         plt.close()
-        print(f"✅ Diagramme enregistré : {filename}")
+        print(f" Diagramme enregistré : {filename}")
 
 # Question 13 — Histogramme de la distribution des 'Inscrits'
 if col_inscrits in contenu.columns:
@@ -130,8 +130,8 @@ if all(col in contenu.columns for col in [col_dept, col_blancs, col_nuls, col_ex
         plt.savefig(os.path.join(IMG_DIR, filename), dpi=150)
         plt.close()
 
-        print(f"✅ Camembert enregistré : {filename}")
+        print(f" Camembert enregistré : {filename}")
 
 else:
-    print("❌ Colonnes nécessaires manquantes.")
+    print(" Colonnes nécessaires manquantes.")
 
